@@ -1,0 +1,16 @@
+[Unit]
+Description=Start Photoframe
+
+[Service]
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/murali/.Xauthority
+User=murali
+Group=murali
+ExecStart=/bin/bash /home/murali/src/dotfiles/bin/photoframe.sh
+Restart=on-failure
+RestartSec=10s
+KillMode=process
+TimeoutSec=infinity
+
+[Install]
+WantedBy=graphical.target
