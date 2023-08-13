@@ -11,3 +11,7 @@ systemctl status clock.service
 journalctl --unit photoframe
 
 sudo cp ~/src/pi-photoframe/photoframe.service /lib/systemd/system/photoframe.service
+
+# Hyper pixel
+
+https://github.com/pimoroni/hyperpixel4

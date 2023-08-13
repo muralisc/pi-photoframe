@@ -2,7 +2,9 @@
 Description=Start Photoframe
 
 [Service]
-Environment=DISPLAY=:0
+# Environment=DISPLAY=:0
+# For hyperpixel
+Environment=DISPLAY=:0.0
 Environment=XAUTHORITY=/home/murali/.Xauthority
 User=murali
 Group=murali
